@@ -5,7 +5,7 @@ import json
 from IPython.display import HTML, display, Markdown
 
 # API configuration
-API_KEY = "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"
+API_KEY = ""
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 # Function to create a scrollable output container
@@ -80,6 +80,8 @@ def process_with_api(prompt, file_contents=None):
 def main():
     print("=== GLM-4.5-Air File Processor ===")
     print("1. Upload markdown files (optional)")
+    print("   - Click 'Choose Files' to upload files, or")
+    print("   - Click 'Cancel' to skip uploading files")
     
     # Step 1: Upload files
     uploaded = files.upload()
